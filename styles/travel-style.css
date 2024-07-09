@@ -13,6 +13,12 @@ li {
   font-style: normal;
 }
 
-#green-bg{
+main {
+  border-style: dotted;
+  border-width: 2px;
+  border-color: aqua;
+}
+
+#places{
   background-color : #689F38;
 }

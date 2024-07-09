@@ -1,6 +1,6 @@
 # Will's Travel App!
 
-2024 v1.1
+2024 v1.2
 
 ====
 
@@ -22,3 +22,11 @@ Version 1.1
  - Moved Over from CodePen
  - Added Comments in code
  - Cleaned up format
+
+Version 1.2
+ - Buttons Added
+ - Clear Places: Clears the page 
+ - Load Places: Loads the Top Ten Travel Locations.
+ - Blue border added (mimic water)
+ - Array added
+ - Loop added for that array
