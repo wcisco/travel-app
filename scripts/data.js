@@ -12,7 +12,7 @@ data = {
         {   city : "Nassau",
             country : "Bahamas"
         },
-        {   city : "Mirmar Beach",
+        {   city : "Miramar Beach",
             country : "Florida"
         },
         {   city : "West Yellowstone",

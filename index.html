@@ -40,6 +40,9 @@ Verison: 2.0
         <li class="nav-item">
           <a class="nav-link" target="repo" href="https://github.com/wcisco/travel-app" tabindex="-1">&lt;Source Code <i class="bi bi-file-earmark-code"></i>></a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pages/info.html">More Info and Pics!</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -50,20 +53,51 @@ Verison: 2.0
 </header>
 
 <!-- Main Text -->
-<main>
+<main class="m-2 p-2 row">
   <h2>The Rankings!</h2>
+  <div class="col-lg-8 offset-lg-2">
+  <div class = "mb-3">
+    <button id="btnAddSpot" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#addSongModal">add spot</button>
+    
+    <button id="btnShowAll" class="btn btn-info btn-sm">show all</button>
+    <button id="btnHideAll" class="btn btn-info btn-sm">hide all</button>
+    <button id="btnConsoleData" class="btn btn-info btn-sm">write data object in console</button>
 
-  <!-- <div class = "mb-3">
-    <button id="btnLoad" class="btn btn-info">Load Places</button>
-    <button id="btnClear" class="btn btn-success">Clear Places</button>
 
+  </div>
+  <div id="addSongModal" class="modal fade" tabindex="-1" aria-labelledby="addSongModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add New Spot</h5>
+          
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <ul class="list-group">
 
-  </div> -->
-  <a target="_blank" herf="pages/info.html">Pictures and Information</a>
-  <!-- Ordered list -->
-  <ol id="places" class="list-group">
+              <li class="input-group w-100">
+                <span class="w-20 input-group-text">spot</span>
+                <input id="spotAddCity" type="text" class="form-control" placeholder="city">
+              </li>
+
+              <li class="input-group w-100">
+                <span class="w-20 input-group-text">artist</span>
+                <input id="spotAddCountry" type="text" class="form-control" placeholder="country" >
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button id="btnSaveSpot" type="button" class="btn btn-primary">save spot</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ul id="spots" class="list-group">
     <li class="list-group-item">no places loaded</li>
-  </ol>
+  </ul>
 </main>
 
 <!-- Footer -->
